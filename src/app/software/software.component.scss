@@ -1,0 +1,126 @@
+@import '../../assets/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Rubik:wght@300;400;500;700&display=swap');
+.software-section {
+    background-color: lighten($color: $Primary-color, $amount: 45);
+    .owl-carousel {
+        position: relative;
+        @media (max-width: $ipod) {
+            margin: 60px auto;
+        }
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+            img {
+                width: 150px;
+                background-color: #fff;
+            }
+        }
+         ::ng-deep .owl-nav {
+            color: $Primary-color;
+            position: absolute;
+            top: -80px;
+            right: 0;
+            @media (max-width: $ipod) {
+                top: -80px;
+                right: 0px;
+                left: 0;
+                text-align: center;
+            }
+            button {
+                width: 36px;
+                height: 36px;
+                border: 2px solid $Primary-color;
+                display: inline-flex;
+                justify-content: center;
+                border-radius: 100%;
+                margin: 30px 5px 0;
+                background-color: transparent;
+                transition: 0.3s all ease-in-out;
+                &:focus {
+                    outline: none;
+                }
+                &:hover {
+                    background-color: $Secondary-color;
+                    transition: 0.3s all ease-in-out;
+                }
+                span {
+                    font-size: 39px;
+                    line-height: 22px;
+                }
+            }
+        }
+         ::ng-deep .owl-dots {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0px auto;
+            text-align: center;
+            bottom: -40px;
+            @media (max-width: $ipod) {
+                bottom: -50px;
+            }
+            button {
+                width: 12px;
+                height: 12px;
+                border-radius: 100%;
+                background-color: lighten($color: $Secondary-color, $amount: 10);
+                margin: 0 5px;
+                &:focus {
+                    outline: none;
+                }
+                &.active {
+                    background-color: $Primary-color;
+                }
+            }
+        }
+    }
+}
+
+.s-header {
+    position: relative;
+    z-index: 1;
+    h1 {
+        color: $Secondary-color;
+        display: table;
+        margin: 0px auto 10px;
+        position: relative;
+        @media (max-width: $mobile) {
+            font-size: 30px;
+        }
+        label {
+            color: $Primary-color
+        }
+    }
+    .line {
+        position: relative;
+        margin: 0px auto 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 150px;
+        @media (max-width: $ipod) {
+            margin-bottom: 30px;
+        }
+        span {
+            width: 60px;
+            height: 4px;
+            display: block;
+            border-radius: 3px;
+            background-color: $Secondary-color;
+            text-align: center;
+        }
+        i {
+            color: $Primary-color;
+            bottom: -18px;
+            margin: 0px auto;
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+}
+
+.padt-0 {
+    padding-top: 0;
+}
