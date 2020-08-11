@@ -24,14 +24,14 @@
         width: 700px;
         max-width: 90%;
         margin: 0px auto;
-        background: rgba(255, 255, 255, 0.1);
+        background: white;
         padding: 40px;
         @media (max-width: $mobile) {
             padding: 20px;
         }
         .s-header {
             h3 {
-                color: white;
+                color: $Secondary-color;
                 span {
                     color: $Primary-color;
                 }
@@ -41,7 +41,7 @@
                     margin-bottom: 20px;
                 }
                 span {
-                    background-color: #fff;
+                    background-color: $Secondary-color;
                 }
             }
         }
@@ -61,7 +61,7 @@
                 border-color: $Primary-color;
                 box-shadow: none;
                 background-color: transparent;
-                color: white;
+                color: $Secondary-color;
                 width: 100%;
                 border-radius: 0px;
                 @media (max-width: $mobile) {
@@ -69,7 +69,7 @@
                     margin-bottom: 10px;
                 }
                 &::placeholder {
-                    color: white;
+                    color: $Secondary-color;
                 }
                 &.w-half {
                     width: 48%;
@@ -83,7 +83,7 @@
                     cursor: pointer;
                 }
                 label {
-                    color: white;
+                    color: $Secondary-color;
                 }
                 .custom-control-input:checked~.custom-control-label::before {
                     border-color: $Primary-color;
@@ -99,7 +99,7 @@
             }
             p {
                 margin: 20px 0;
-                color: white;
+                color: $Secondary-color;
                 a {
                     color: $Primary-color;
                 }
@@ -191,7 +191,8 @@ a.animated-button:visited:after {
 
 a.animated-button:hover,
 a.animated-button:hover {
-    color: #FFF;
+    color: white;
+    background-color: $Primary-color;
     text-shadow: none;
 }
 
