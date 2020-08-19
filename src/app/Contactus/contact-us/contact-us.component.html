@@ -15,7 +15,7 @@
                 <div class="row d-flex align-items-start justify-content-between">
                     <div class="col-md-5">
                         <div class="contact-form">
-                            <form class="form-box">
+                            <form class="form-box" [formGroup]="contactUsForm">
                                 <div class="s-header">
                                     <h3>Get in Touch</h3>
                                     <div class="line">
@@ -26,22 +26,24 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Enter Name" id="name">
+                                    <input type="text" class="form-control" placeholder="Enter Name" id="name" formControlName="name">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Enter email" id="email">
+                                    <input type="email" class="form-control" placeholder="Enter email" id="email" formControlName="email">
                                 </div>
                                 <div class="form-group">
-                                    <input type="number" class="form-control" placeholder="Enter Contact Number" id="cn">
+                                    <input type="text" class="form-control" placeholder="Enter Contact Number" id="cn" formControlName="contactNumber">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Enter Organization Name" id="o-name">
+                                    <input type="text" class="form-control" placeholder="Enter Organization Name" id="o-name" formControlName="organizationName">
                                 </div>
                                 <div class="form-group">
-                                    <textarea type="text" rows="4" class="form-control" placeholder="Enter Name" id="msg"></textarea>
+                                    <textarea type="text" rows="4" class="form-control" placeholder="Enter Name" id="msg" formControlName="inquiryMessage"></textarea>
                                 </div>
-
-                                <a href="#" class="btn btn-sm animated-button center-btn">Submit</a>
+                                <!-- <a class="btn btn-sm animated-button center-btn">
+                                  <button type="button"  [disabled]="contactUsForm.invalid" (click)="submitContactUs()">Submit</button>
+                                </a> -->
+                                <a class="btn btn-sm animated-button center-btn" (click)="submitContactUs()">Submit</a>
                             </form>
                         </div>
                     </div>

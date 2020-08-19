@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,31 +22,34 @@ import { ServiceListComponent } from './Services/services/service-list/service-l
 import { SoftwareComponent } from './software/software.component';
 
 @NgModule({
-   declarations: [
-      AppComponent,
-      ContactUsComponent,
-      HomepageComponent,
-      HeaderComponent,
-      FooterComponent,
-      ServicesComponent,
-      ServiceListComponent,
-      SubServiceComponent,
-      DataSecurityComponent,
-      AboutusComponent,
-      PricingComponent,
-      SubscriptionBoxComponent,
-      SpecialityComponent,
-      SubSpecialityComponent,
-      SpecialityListComponent,
-      SoftwareComponent
-   ],
-   imports: [
-      BrowserModule,
-      AppRoutingModule
-   ],
-   providers: [],
-   bootstrap: [
-      AppComponent
-   ]
+  declarations: [
+    AppComponent,
+    ContactUsComponent,
+    HomepageComponent,
+    HeaderComponent,
+    FooterComponent,
+    ServicesComponent,
+    ServiceListComponent,
+    SubServiceComponent,
+    DataSecurityComponent,
+    AboutusComponent,
+    PricingComponent,
+    SubscriptionBoxComponent,
+    SpecialityComponent,
+    SubSpecialityComponent,
+    SpecialityListComponent,
+    SoftwareComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
+  ],
+  providers: [],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
