@@ -21,12 +21,12 @@ const routes: Routes = [
     path: 'contact',
     component: ContactUsComponent
   },
+  // {
+  //   path: 'services',
+  //   component: ServicesComponent
+  // },
   {
-    path: 'services',
-    component: ServicesComponent
-  },
-  {
-    path: 'services/service',
+    path: 'services/:sub-service',
     component: SubServiceComponent
   },
   {
@@ -49,8 +49,6 @@ const routes: Routes = [
     path: 'speciality/sub-speciality',
     component: SubSpecialityComponent
   }
-  
-  
 ];
 
 @NgModule({
