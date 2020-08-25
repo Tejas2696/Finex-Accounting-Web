@@ -47,8 +47,7 @@ a.animated-button {
     }
 }
 
-a.animated-button:link:after,
-a.animated-button:visited:after {
+a.animated-button:after {
     content: "";
     position: absolute;
     height: 0%;
@@ -62,14 +61,12 @@ a.animated-button:visited:after {
     transition: all 0.75s ease 0s;
 }
 
-a.animated-button:link:hover,
-a.animated-button:visited:hover {
+a.animated-button:hover {
     color: #FFF;
     text-shadow: none;
 }
 
-a.animated-button:link:hover:after,
-a.animated-button:visited:hover:after {
+a.animated-button:hover:after {
     height: 450%;
 }
 
