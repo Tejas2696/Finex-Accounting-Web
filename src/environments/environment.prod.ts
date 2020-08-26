@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  api_root_url: 'http://finexaccounting.co.uk/backend'
+  api_root_url: 'https://finexaccounting.co.uk/backend'
 };
