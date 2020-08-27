@@ -26,7 +26,7 @@ const routes: Routes = [
   //   component: ServicesComponent
   // },
   {
-    path: 'services/:sub-service',
+    path: 'services/:serviceName',
     component: SubServiceComponent
   },
   {
