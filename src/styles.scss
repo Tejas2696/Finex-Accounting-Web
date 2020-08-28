@@ -21,7 +21,7 @@ label {
     overflow: hidden;
 }
 
-a.animated-button {
+.animated-button {
     border: 2px solid $Primary-color;
     width: 150px;
     position: relative;
@@ -47,7 +47,7 @@ a.animated-button {
     }
 }
 
-a.animated-button:after {
+.animated-button:after {
     content: "";
     position: absolute;
     height: 0%;
@@ -61,16 +61,16 @@ a.animated-button:after {
     transition: all 0.75s ease 0s;
 }
 
-a.animated-button:hover {
+.animated-button:hover {
     color: #FFF;
     text-shadow: none;
 }
 
-a.animated-button:hover:after {
+.animated-button:hover:after {
     height: 450%;
 }
 
-a.animated-button:after {
+.animated-button:after {
     background: $Primary-color;
     -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
     -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);

@@ -9,7 +9,7 @@
                 color: #f2f2f2;
                 text-decoration: none;
             }
-
+            
             a {
                 text-decoration: none;
                 color: #f2f2f2;
@@ -17,32 +17,32 @@
                     color: inherit;
                 }
             }
-
+            
             button:focus {
                 outline: none;
             }
-
+            
             h1,
             h2,
             h3,
             h4 {
                 font-family: 'Rubik', sans-serif;
             }
-
+            
             p,
             a,
             li,
             body {
                 font-family: 'Nunito', sans-serif;
             }
-
+            
             body {
                 overflow-x: hidden;
             }
-
+            
             // Homepage Banner
             /* Button */
-
+            
             .banner-section {
                 #carousel {
                     .carousel-item.boat {
@@ -151,7 +151,7 @@
                     }
                 }
             }
-
+            
             // About us section
             .s-header {
                 position: relative;
@@ -195,7 +195,7 @@
                     }
                 }
             }
-
+            
             .s-content {
                 position: relative;
                 z-index: 1;
@@ -203,7 +203,7 @@
                     line-height: 1.7;
                 }
             }
-
+            
             .why-section {
                 background: url(../../../assets/img/Management.JPG) no-repeat;
                 background-size: cover;
@@ -252,7 +252,7 @@
                     }
                 }
             }
-
+            
             .software-section {
                 .owl-carousel {
                     position: relative;
@@ -329,7 +329,7 @@
                     }
                 }
             }
-
+            
             // Pop up
             .Subscription-popup {
                 position: fixed;
@@ -392,10 +392,10 @@
                         }
                     }
                 }
-                a.animated-button.center-btn {
+                .animated-button.center-btn {
                     margin: 30px auto 0;
                 }
-                a.animated-button {
+                .animated-button {
                     @media (max-width: $mobile) {
                         margin: 10px auto 0;
                         padding: 10px;

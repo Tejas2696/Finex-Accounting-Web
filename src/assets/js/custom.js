@@ -10,6 +10,9 @@ $(document).ready(function() {
         $('body').toggleClass('fixed-body');
     });
 
+    $('.core-menu ul li').click(function() {
+        $(this).parent('ul').hide();
+    });
 
     //the trigger on hover when cursor directed to this class
     $(".core-menu li").hover(
@@ -29,9 +32,12 @@ $(document).ready(function() {
         $(".core-menu").slideToggle("fast");
     });
 
+
     $(".close-popup").click(function() {
+        console.log('close clicked......');
         $(".Subscription-popup").removeClass("open-popup").addClass('remove-popup');
     });
+
     $('.owl-carousel').owlCarousel({
         autoplay: true,
         lazyLoad: true,
@@ -62,7 +68,34 @@ $(document).ready(function() {
     })
     var lastScrollTop = 0;
     $(window).scroll(function(event) {
+        $('.owl-carousel').owlCarousel({
+            autoplay: true,
+            lazyLoad: true,
+            loop: true,
+            margin: 20,
+            responsiveClass: true,
+            autoHeight: true,
+            autoplayTimeout: 3000,
+            smartSpeed: 800,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
 
+                600: {
+                    items: 3
+                },
+
+                1024: {
+                    items: 4
+                },
+
+                1366: {
+                    items: 5
+                }
+            }
+        })
         var st = $(this).scrollTop();
         if (st > lastScrollTop) {
             var scroll = $(window).scrollTop();
@@ -92,6 +125,12 @@ $(document).ready(function() {
             $('#return-to-top').fadeOut(200);
             $('#return-to-top').removeClass("bottom");
         }
+
+
+        $(".close-popup").click(function() {
+            console.log('close clicked......');
+            $(".Subscription-popup").removeClass("open-popup").addClass('remove-popup');
+        });
     });
 });
 

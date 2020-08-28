@@ -8,6 +8,14 @@ a {
     }
 }
 
+.animated-button.center-btn {
+    color: $Primary-color;
+    margin: 30px auto 0;
+    &:hover {
+        color: white;
+    }
+}
+
 .s-header {
     position: relative;
     z-index: 1;
