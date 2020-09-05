@@ -31,7 +31,7 @@ export class HomepageComponent implements OnInit {
         [
           Validators.required,
           Validators.minLength(10),
-          Validators.maxLength(10),
+          Validators.maxLength(11),
           Validators.pattern('^[0-9]+[0-9]$')
         ]
       ],

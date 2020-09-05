@@ -28,7 +28,7 @@ export const SPECIALITY_CONTENT = {
     },
     contentMainTitle: 'Our <label>Speciality',
     contentDetails: {
-      contentImage: 'assets/img/VAT.JPG',
+      contentImage: 'assets/img/Music-Industry-Accounts.jpg',
       contentTitle: 'How <span>FINEX</span> will make your Music accounting practice more profitable',
       contentDescription: `Our team can help you to maintain your or your client’s book-keeping properly. Our partnership will help you in:`,
       contentDescList: [
@@ -49,7 +49,7 @@ export const SPECIALITY_CONTENT = {
     },
     contentMainTitle: 'Our <label>Speciality',
     contentDetails: {
-      contentImage: 'assets/img/bk.jpeg',
+      contentImage: 'assets/img/Contractor-accounting.jpg',
       contentTitle: 'How <span>FINEX</span> will make your Contractor accounting practice more profitable',
       contentDescription: `We understand the compliances of IR35 and help you in preparation of thousands of contractor accounts timely with no quality issue. Out partnership will:`,
       contentDescList: [
@@ -68,7 +68,7 @@ export const SPECIALITY_CONTENT = {
     },
     contentMainTitle: 'Our <label>Speciality',
     contentDetails: {
-      contentImage: 'assets/img/bk.jpeg',
+      contentImage: 'assets/img/Restaurant-Accounting.jpg',
       contentTitle: 'How <span>FINEX</span> will make your Restaurant Accounting Practice more profitable',
       contentDescription: `Our expert team will help you to manage the book-keeping of Restaurant. We will help you in Providing you the monthly management reports and also helps you to maintain all your payroll as well. Our partnership will:`,
       contentDescList: [
@@ -88,7 +88,7 @@ export const SPECIALITY_CONTENT = {
     },
     contentMainTitle: 'Our <label>Speciality',
     contentDetails: {
-      contentImage: 'assets/img/bk.jpeg',
+      contentImage: 'assets/img/Pub-accounting.jpg',
       contentTitle: 'How <span>FINEX</span> will make your Pub Accounting Practice more profitable',
       contentDescription: `Our expert team will help you to manage the book-keeping of Pub. We will help you in Providing you the monthly management reports and also helps you to maintain all your payroll as well. Our partnership will:`,
       contentDescList: [

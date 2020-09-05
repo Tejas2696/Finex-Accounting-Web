@@ -21,7 +21,7 @@ export const SERVICES_CONTENT = {
   VAT: {
     bannerDetails: {
       bannerTitle: 'Value added Tax (VAT)',
-      bannerText: 'Delivering Outsourced Accounting and Bookkeeping Services for Accountants',
+      bannerText: 'Delivering Value added Tax (VAT) Services for Accountants',
       bannerBreadCumText: 'Value added Tax (VAT)'
     },
     contentMainTitle: 'What <label>We Do</label>',
@@ -45,7 +45,7 @@ export const SERVICES_CONTENT = {
     },
     contentMainTitle: 'What <label>We Do</label>',
     contentDetails: {
-      contentImage: 'assets/img/bk.jpeg',
+      contentImage: 'assets/img/Management.JPG',
       contentTitle: 'Grow your Management Accounts practice with <span>Fenix</span>',
       contentDescription: `Management reports are the lynchpins for decision making processes.  Reports need to be crisp, unambiguous, with a laser like focus on the business and customized as per specific operation and scale. At Finex the teams help clients and accountants in:`,
       contentDescList: [
@@ -64,7 +64,7 @@ export const SERVICES_CONTENT = {
     },
     contentMainTitle: 'What <label>We Do</label>',
     contentDetails: {
-      contentImage: 'assets/img/bk.jpeg',
+      contentImage: 'assets/img/accounts-and-CT.jpg',
       contentTitle: 'Grow your Year End accounts & CT returns Service with <span>Fenix</span>',
       contentDescription: `Timely submission of year end accounts and CT returns is important to avoid punitive actions. Our professional team will unburden you from this exercise, replacing it with clock work like submissions that will not just be compliant, but which will add value to an organization with advisories, opinions and analytics on areas of improvement. Finex can help you in:`,
       contentDescList: [
@@ -87,7 +87,7 @@ export const SERVICES_CONTENT = {
     },
     contentMainTitle: 'What <label>We Do</label>',
     contentDetails: {
-      contentImage: 'assets/img/bk.jpeg',
+      contentImage: 'assets/img/Tax.jpg',
       contentTitle: 'Grow your Management Accounts practice with <span>Fenix</span>',
       contentDescription: `Finex offers to manage all your personal tax return with fix rate per tax return irrespective the income shown in tax return. Our expert team can help you in prepare & Submit the tax return by considering:`,
       contentDescList: [
@@ -108,7 +108,7 @@ export const SERVICES_CONTENT = {
     },
     contentMainTitle: 'What <label>We Do</label>',
     contentDetails: {
-      contentImage: 'assets/img/bk.jpeg',
+      contentImage: 'assets/img/company-secretarial.JPG',
       contentTitle: 'Grow your Company Secretarial practice with <span>Fenix</span>',
       contentDescription: `Finex will help you to meet all statutory requirements and Compliances. Our secretarial team will help you in:`,
       contentDescList: [
