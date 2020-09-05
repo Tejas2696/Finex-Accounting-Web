@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
 
-  api_root_url: 'http://localhost:3000'
+  // api_root_url: 'http://localhost:3000'
+  api_root_url: 'https://finexaccounting.co.uk/backend'
 };
 
 /*

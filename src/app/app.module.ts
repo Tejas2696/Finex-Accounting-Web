@@ -12,7 +12,7 @@ import { FooterComponent } from './Footer/footer/footer.component';
 import { ServicesComponent } from './Services/services/services.component';
 import { SubServiceComponent } from './Services/Sub-services/sub-service/sub-service.component';
 import { DataSecurityComponent } from './About-us/Data-security/data-security/data-security.component';
-import { AboutusComponent } from './About-us/Data-security/aboutus/aboutus.component';
+import { AboutusComponent } from './About-us/aboutus/aboutus.component';
 import { PricingComponent } from './About-us/pricing/pricing.component';
 import { SubscriptionBoxComponent } from './Subscription-box/Subscription-box.component';
 import { SpecialityComponent } from './Speciality/Speciality.component';

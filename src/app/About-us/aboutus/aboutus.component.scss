@@ -1,4 +1,4 @@
-@import '../../../../assets/variables.scss';
+@import '../../../assets/variables.scss';
 // @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Rubik:wght@300;400;500;700&display=swap');
 a {
     text-decoration: none;
@@ -10,7 +10,7 @@ a {
 
 .contact-banner {
     margin-top: 93px;
-    background: url(../../../../assets/img/Home.jpg) no-repeat;
+    background: url(../../../assets/img/Home.jpg) no-repeat;
     background-attachment: fixed;
     background-size: cover;
     position: relative;
@@ -157,7 +157,7 @@ a {
 }
 
 .free-trial-section {
-    background: url(../../../../assets/img/Home.jpg) no-repeat;
+    background: url(../../../assets/img/Home.jpg) no-repeat;
     background-attachment: fixed;
     background-size: cover;
     position: relative;
