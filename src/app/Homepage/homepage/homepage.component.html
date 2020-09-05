@@ -11,21 +11,28 @@
     </div>
     <div class="popup-content">
         <p>Book your first free 10 hours of Book-keeping, Year-end or Personal tax return so that you can evaluate us properly regarding quality of services with data protection:</p>
-        <form class="popup-form">
+        <form class="popup-form" [formGroup]="inquiryForm">
             <div class="form-group">
 
-                <input type="text" class="form-control" id="uname" placeholder="Full Name" name="uname" required>
-
-            </div>
-            <div class="form-group">
-                <input type="Number" class="form-control" id="number" placeholder="Mobile Number" name="number" required>
+                <input type="text" class="form-control" id="uname" placeholder="Full Name" name="name" formControlName="name">
 
             </div>
             <div class="form-group">
-                <textarea type="text" rows="4" class="form-control" id="msg" placeholder="Message" name="msg"></textarea>
+                <input type="text" class="form-control" id="number" placeholder="Mobile Number" name="contactNumber" formControlName="contactNumber">
+
             </div>
-            <button type="button" class="btn btn-sm animated-button center-btn">Try For Free</button>
+            <div class="form-group">
+                <textarea type="text" rows="4" class="form-control" id="msg" placeholder="Message" name="msg" formControlName="inquiryMessage"></textarea>
+            </div>
+            <button type="button" class="btn btn-sm animated-button center-btn" [disabled]="inquiryForm.invalid" (click)="submitInquiryForm()">Try For Free</button>
         </form>
+
+        <div *ngIf="errorMessage!=null" class="alert alert-danger">
+          {{ errorMessage }}
+        </div>
+        <div *ngIf="infoMessage!=null" class="alert alert-primary">
+            {{ infoMessage }}
+        </div>
     </div>
 </div>
 

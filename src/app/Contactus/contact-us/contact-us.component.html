@@ -36,14 +36,18 @@
                                     <input type="text" class="form-control" placeholder="Enter Organization Name" id="o-name" formControlName="organizationName">
                                 </div>
                                 <div class="form-group">
-                                    <textarea type="text" rows="4" class="form-control" placeholder="Enter Name" id="msg" formControlName="inquiryMessage"></textarea>
+                                    <textarea type="text" rows="4" class="form-control" placeholder="Enter Message" id="msg" formControlName="inquiryMessage"></textarea>
                                 </div>
-                                <!-- <a class="btn btn-sm animated-button center-btn">
-                                  <button type="button"  [disabled]="contactUsForm.invalid" (click)="submitContactUs()">Submit</button>
-                                </a> -->
-                                <button type="button" class="btn btn-sm animated-button center-btn" (click)="submitContactUs()">Submit</button>
+                                <button type="button" class="btn btn-sm animated-button center-btn" [disabled]="contactUsForm.invalid" (click)="submitContactUs()">Submit</button>
 
                             </form>
+
+                            <div *ngIf="errorMessage!=null" class="alert alert-danger">
+                              {{ errorMessage }}
+                            </div>
+                            <div *ngIf="infoMessage!=null" class="alert alert-primary">
+                                {{ infoMessage }}
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-2">
@@ -60,7 +64,7 @@
                     </div>
                     <div class="col-md-5">
                         <div class="contact-form call-req">
-                            <form class="form-box">
+                            <form class="form-box" [formGroup]="requestACallBackForm">
                                 <div class="s-header">
                                     <h3>Request a Call Back</h3>
 
@@ -72,25 +76,32 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Enter Name" id="name">
+                                    <input type="text" class="form-control" placeholder="Enter Name" id="name" formControlName="name">
                                 </div>
                                 <div class="form-group">
-                                    <input type="number" class="form-control" placeholder="Enter Contact Number" id="cn">
+                                    <input type="text" class="form-control" placeholder="Enter Contact Number" id="cn" formControlName="contactNumber">
                                 </div>
                                 <div class="form-group">
-                                    <select class="form-control">
-                                      <option>Select Service  </option>
-                                      <option>Year end account and CT returns </option>
-                                      <option>Book-keeping & VAT return </option>
-                                      <option> Self-assessment return </option>
-                                      <option> Company secretarial </option>
-                                      <option> Management accounts </option>
-                                      <option>Payroll services</option>
+                                    <select class="form-control" formControlName="serviceType">
+                                      <option value="" disabled selected hidden>--Select Service--</option>
+                                      <option value="Year end account and CT returns">Year end account and CT returns</option>
+                                      <option value="Book-keeping & VAT return">Book-keeping & VAT return</option>
+                                      <option value="Self-assessment return">Self-assessment return</option>
+                                      <option value="Company secretarial">Company secretarial</option>
+                                      <option value="Management accounts">Management accounts</option>
+                                      <option value="Payroll services">Payroll services</option>
                                     </select>
                                 </div>
 
-                                <button type="button" class="btn btn-sm animated-button center-btn">Submit</button>
+                                <button type="button" class="btn btn-sm animated-button center-btn" [disabled]="requestACallBackForm.invalid" (click)="submitRequestACallback()">Submit</button>
                             </form>
+
+                            <div *ngIf="requestACallBackErrorMessage!=null" class="alert alert-danger">
+                              {{ requestACallBackErrorMessage }}
+                            </div>
+                            <div *ngIf="requestACallBackInfoMessage!=null" class="alert alert-primary">
+                                {{ requestACallBackInfoMessage }}
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -26,7 +26,7 @@ export const SPECIALITY_CONTENT = {
       bannerText: 'Delivering Outsourced Music Industry Accounting for Accountants',
       bannerBreadCumText: 'Music Industry Accounting'
     },
-    contentMainTitle: 'What <label>We Do</label>',
+    contentMainTitle: 'Our <label>Speciality',
     contentDetails: {
       contentImage: 'assets/img/VAT.JPG',
       contentTitle: 'How <span>FINEX</span> will make your Music accounting practice more profitable',
@@ -47,7 +47,7 @@ export const SPECIALITY_CONTENT = {
       bannerText: 'Delivering Outsourced Contractor Accounting Services for Accountants',
       bannerBreadCumText: 'Contractor Accounting'
     },
-    contentMainTitle: 'What <label>We Do</label>',
+    contentMainTitle: 'Our <label>Speciality',
     contentDetails: {
       contentImage: 'assets/img/bk.jpeg',
       contentTitle: 'How <span>FINEX</span> will make your Contractor accounting practice more profitable',
@@ -66,7 +66,7 @@ export const SPECIALITY_CONTENT = {
       bannerText: 'Delivering Restaurant Accounting Services for Accountants',
       bannerBreadCumText: 'Restaurant Accounting'
     },
-    contentMainTitle: 'What <label>We Do</label>',
+    contentMainTitle: 'Our <label>Speciality',
     contentDetails: {
       contentImage: 'assets/img/bk.jpeg',
       contentTitle: 'How <span>FINEX</span> will make your Restaurant Accounting Practice more profitable',
@@ -86,7 +86,7 @@ export const SPECIALITY_CONTENT = {
       bannerText: 'Delivering Pub Accounting Services for Accountants',
       bannerBreadCumText: 'Pub Accounting'
     },
-    contentMainTitle: 'What <label>We Do</label>',
+    contentMainTitle: 'Our <label>Speciality',
     contentDetails: {
       contentImage: 'assets/img/bk.jpeg',
       contentTitle: 'How <span>FINEX</span> will make your Pub Accounting Practice more profitable',

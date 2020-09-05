@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="ft-box">
-                        <form class="form-box">
+                        <form class="form-box" [formGroup]="inquiryForm">
                             <div class="s-header">
                                 <h3>Start a <span>Free Trial</span></h3>
                                 <div class="line">
@@ -15,22 +15,29 @@
                             </div>
 
                             <div class="form-group">
-                                <input type="text" class="form-control w-half" placeholder="Full Name" id="name">
-                                <input type="email" class="form-control w-half" placeholder="Business Email" id="email">
+                                <input type="text" class="form-control w-half" placeholder="Full Name" id="name" formControlName="name">
+                                <input type="email" class="form-control w-half" placeholder="Business Email" id="email" formControlName="email">
                             </div>
                             <div class="form-group">
-                                <input type="number" class="form-control" placeholder="Mobile Number" id="cn">
+                                <input type="text" class="form-control" placeholder="Mobile Number" id="cn" formControlName="contactNumber">
                             </div>
                             <div class="form-group">
-                                <textarea type="text" rows="4" class="form-control" placeholder="Message" id="msg"></textarea>
+                                <textarea type="text" rows="4" class="form-control" placeholder="Message" id="msg" formControlName="inquiryMessage"></textarea>
                             </div>
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2" name="consent" formControlName="consent">
                                 <label class="custom-control-label" for="customCheck2">I give consent to Finex to send emails.</label>
                             </div>
                             <!-- <p>We will never spam you or share your data with anyone. You can unsubscribe at any time as outlined in our <a href="">Privacy Notice</a>.</p> -->
-                            <button type="button" class="btn btn-sm animated-button center-btn">Submit</button>
+                            <button type="button" class="btn btn-sm animated-button center-btn" [disabled]="inquiryForm.invalid" (click)="submitInquiryForm()">Submit</button>
                         </form>
+
+                        <div *ngIf="errorMessage!=null" class="alert alert-danger">
+                          {{ errorMessage }}
+                        </div>
+                        <div *ngIf="infoMessage!=null" class="alert alert-primary">
+                            {{ infoMessage }}
+                        </div>
                     </div>
                 </div>
             </div>

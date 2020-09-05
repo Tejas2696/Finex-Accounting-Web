@@ -6,6 +6,7 @@ import { InquiryEntity } from '../models/inquiry-entity';
 import { Observable } from 'rxjs';
 import { StrictHttpResponse } from '../strict-http-response';
 import { map as __map, filter as __filter } from 'rxjs/operators';
+import { SendEmailResponse } from '../models/send-email-response-entity';
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +20,7 @@ export class InquiryControllerService extends BaseService {
     super(config, http);
   }
 
-  sendInquiryUsingPOSTResponse(params: InquiryEntity): Observable<StrictHttpResponse<string>> {
+  sendInquiryUsingPOSTResponse(params: InquiryEntity): Observable<StrictHttpResponse<SendEmailResponse>> {
     // console.log('params', params);
     // let __params = this.newParams();
     // let __headers = new HttpHeaders();
@@ -38,14 +39,14 @@ export class InquiryControllerService extends BaseService {
     return this.http.request<any>(req).pipe(
       __filter(_r => _r instanceof HttpResponse),
       __map((_r) => {
-        return _r as StrictHttpResponse<string>;
+        return _r as StrictHttpResponse<SendEmailResponse>;
       })
     );
   }
 
-  sendInquiryUsingPOST(params: InquiryEntity): Observable<string> {
+  sendInquiryUsingPOST(params: InquiryEntity): Observable<SendEmailResponse> {
     return this.sendInquiryUsingPOSTResponse(params).pipe(
-      __map(_r => _r.body as string)
+      __map(_r => _r.body as SendEmailResponse)
     );
   }
 
