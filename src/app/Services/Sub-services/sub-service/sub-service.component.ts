@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SERVICES_CONTENT } from '../../../page-data/services-content';
-import { ServiceContentEntity } from 'src/app/api/models/service-content-entity';
+import { ContentEntity } from 'src/app/api/models/content-entity';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -13,7 +13,7 @@ export class SubServiceComponent implements OnInit {
 
   constructor(public route: ActivatedRoute) { }
 
-  serviceContent: ServiceContentEntity;
+  serviceContent: ContentEntity;
 
   ngOnInit() {
     this.route.params.subscribe(params => {
@@ -21,16 +21,31 @@ export class SubServiceComponent implements OnInit {
       console.log(this.serviceName);
 
       switch (this.serviceName) {
-        case 'VAT': {
-          this.serviceContent = SERVICES_CONTENT.VAT;
-          break;
-        }
         case 'book-keping': {
           this.serviceContent = SERVICES_CONTENT.bookKeping;
           break;
         }
+        case 'VAT': {
+          this.serviceContent = SERVICES_CONTENT.VAT;
+          break;
+        }
+        case 'management-account': {
+          this.serviceContent = SERVICES_CONTENT.managementAccounts;
+          break;
+        }
+        case 'year-end-accounts&CT-returns': {
+          this.serviceContent = SERVICES_CONTENT.yearEndAccountsAndCTReturns;
+          break;
+        }
+        case 'self-assesment-tax-returns': {
+          this.serviceContent = SERVICES_CONTENT.selfAssessmentTaxReturns;
+          break;
+        }
+        case 'company-secretarial': {
+          this.serviceContent = SERVICES_CONTENT.companySecretarial;
+          break;
+        }
       }
-
       console.log(this.serviceContent);
     });
 

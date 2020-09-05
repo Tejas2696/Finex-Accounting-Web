@@ -21,10 +21,10 @@ const routes: Routes = [
     path: 'contact',
     component: ContactUsComponent
   },
-  // {
-  //   path: 'services',
-  //   component: ServicesComponent
-  // },
+  {
+    path: 'services',
+    component: ServicesComponent
+  },
   {
     path: 'services/:serviceName',
     component: SubServiceComponent
@@ -42,11 +42,11 @@ const routes: Routes = [
     component: PricingComponent
   },
   {
-    path: 'speciality',
+    path: 'specialities',
     component: SpecialityComponent
   },
   {
-    path: 'speciality/sub-speciality',
+    path: 'specialities/:specialityName',
     component: SubSpecialityComponent
   }
 ];

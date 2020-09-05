@@ -1,5 +1,5 @@
 /* tslint:disable */
-export interface ServiceContentEntity {
+export interface ContentEntity {
   bannerDetails?: {
     bannerTitle?: string;
     bannerText?: string;

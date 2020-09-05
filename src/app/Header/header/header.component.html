@@ -31,22 +31,23 @@
             </div>
             <ul class='core-menu'>
                 <li><a [routerLink]="['']">Home</a></li>
-                <li><a>Services<span class='toggle'></span></a>
+                <li><a [routerLink]="['/services']">Services<span class='toggle'></span></a>
                     <ul class='dropdown'>
                         <li><a [routerLink]="['/services/book-keping']">Book-Keeping</a></li>
                         <li><a [routerLink]="['/services/VAT']">Value added Tax (VAT)</a></li>
                         <li><a [routerLink]="['/services/management-account']">Management Accounts</a></li>
                         <li><a [routerLink]="['/services/year-end-accounts&CT-returns']">Year End accounts & CT returns</a></li>
-                        <li><a [routerLink]="['/services/seld-assesment-tax-returns']">Self-Assessment Tax Returns</a></li>
+                        <li><a [routerLink]="['/services/self-assesment-tax-returns']">Self-Assessment Tax Returns</a></li>
+                        <li><a [routerLink]="['/services/company-secretarial']">Company Secretarial</a></li>
                     </ul>
                 </li>
-                <li><a [routerLink]="['/speciality']">Specialties<span class='toggle'></span></a>
+                <li><a [routerLink]="['/specialities']">Specialties<span class='toggle'></span></a>
                     <ul class='dropdown'>
-                        <li><a [routerLink]="['/speciality/sub-speciality']">Solicitor Accounting</a></li>
-                        <li><a [routerLink]="['/speciality/sub-speciality']">Music industry Accounting</a></li>
-                        <li><a [routerLink]="['/speciality/sub-speciality']">Contractor Accounting</a></li>
-                        <li><a [routerLink]="['/speciality/sub-speciality']">Restaurant Accounting</a></li>
-                        <li><a [routerLink]="['/speciality/sub-speciality']">Pub Accounting</a></li>
+                        <li><a [routerLink]="['/specialities/solicitor-accounting']">Solicitor Accounting</a></li>
+                        <li><a [routerLink]="['/specialities/music-industry-accounting']">Music industry Accounting</a></li>
+                        <li><a [routerLink]="['/specialities/contractor-accounting']">Contractor Accounting</a></li>
+                        <li><a [routerLink]="['/specialities/restaurant-accounting']">Restaurant Accounting</a></li>
+                        <li><a [routerLink]="['/specialities/pub-accounting']">Pub Accounting</a></li>
                     </ul>
                 </li>
                 <li><a>About Us<span class='toggle'></span></a>
