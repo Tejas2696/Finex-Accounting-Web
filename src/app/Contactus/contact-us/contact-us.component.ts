@@ -152,8 +152,8 @@ export class ContactUsComponent implements OnInit {
         res => {
           if (res.error === false) {
             this.requestACallBackInfoMessage = 'Thank You! We will contact you shortly…';
-            this.requestACallBackForm.get('name').patchValue('');
-            this.requestACallBackForm.get('contactNumber').patchValue('');
+            this.requestACallBackForm.reset();
+            this.requestACallBackForm.get('serviceType').patchValue('');
           } else {
             this.requestACallBackErrorMessage = 'Oops! Something went wrong. Please try again later.';
           }
