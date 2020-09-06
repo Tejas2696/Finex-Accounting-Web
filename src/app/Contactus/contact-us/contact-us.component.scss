@@ -60,6 +60,7 @@ a {
             text-align: center;
         }
         .form-group {
+            position: relative;
             input,
             textarea,
             select {
@@ -73,6 +74,23 @@ a {
             }
             textarea {
                 border-radius: 10px;
+            }
+            select {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                position: relative;
+            }
+            .s-down-arrow {
+                position: absolute;
+                display: inline-block;
+                top: 9px;
+                right: 13px;
+                z-index: 1;
+                pointer-events: none;
+                i {
+                    color: #c1c1c1;
+                    font-size: 22px;
+                }
             }
         }
         .animated-button.center-btn {

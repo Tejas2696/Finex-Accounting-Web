@@ -43,7 +43,7 @@
                             </form>
 
                             <div *ngIf="errorMessage!=null" class="alert alert-danger">
-                              {{ errorMessage }}
+                                {{ errorMessage }}
                             </div>
                             <div *ngIf="infoMessage!=null" class="alert alert-primary">
                                 {{ infoMessage }}
@@ -82,6 +82,9 @@
                                     <input type="text" class="form-control" placeholder="Enter Contact Number" id="cn" formControlName="contactNumber">
                                 </div>
                                 <div class="form-group">
+                                    <span class="s-down-arrow">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
                                     <select class="form-control" formControlName="serviceType">
                                       <option value="" disabled selected hidden>--Select Service--</option>
                                       <option value="Year end account and CT returns">Year end account and CT returns</option>
@@ -97,7 +100,7 @@
                             </form>
 
                             <div *ngIf="requestACallBackErrorMessage!=null" class="alert alert-danger">
-                              {{ requestACallBackErrorMessage }}
+                                {{ requestACallBackErrorMessage }}
                             </div>
                             <div *ngIf="requestACallBackInfoMessage!=null" class="alert alert-primary">
                                 {{ requestACallBackInfoMessage }}
