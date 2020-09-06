@@ -1,6 +1,9 @@
 <main>
     <section>
         <div class="contact-banner">
+            <div class="bgimg">
+                <img src="assets/img/Home.jpg" />
+            </div>
             <div class="container">
                 <div class="banner-content">
                     <h1>{{ specialityContent.bannerDetails.bannerTitle }}</h1>
@@ -10,7 +13,7 @@
                             <a [routerLink]="['/specialities']">Specialities</a>
                         </li>
                         <li>
-                          {{ specialityContent.bannerDetails.bannerBreadCumText }}
+                            {{ specialityContent.bannerDetails.bannerBreadCumText }}
                         </li>
                     </ul>
                 </div>
@@ -23,7 +26,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="s-header">
-                          <h1 [innerHTML]="specialityContent.contentMainTitle"></h1>
+                            <h1 [innerHTML]="specialityContent.contentMainTitle"></h1>
                             <div class="line">
                                 <span class="l-span"></span>
                                 <i class="fa fa-crosshairs" aria-hidden="true"></i>
@@ -43,8 +46,8 @@
                             <h3 [innerHTML]="specialityContent.contentDetails.contentTitle"></h3>
                             <p>{{ specialityContent.contentDetails.contentDescription }}</p>
                             <ul *ngFor="let contentDescItem of specialityContent.contentDetails.contentDescList">
-                              <li>{{ contentDescItem }}</li>
-                          </ul>
+                                <li>{{ contentDescItem }}</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

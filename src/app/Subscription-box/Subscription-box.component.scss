@@ -91,7 +91,7 @@
                     box-shadow: none;
                 }
                 .custom-control-input:focus:not(:checked)~.custom-control-label::before {
-                    border: none;
+                    border-color: $Primary-color;
                 }
                 .custom-control-input:focus~.custom-control-label::before {
                     box-shadow: none

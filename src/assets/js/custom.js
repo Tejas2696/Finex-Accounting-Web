@@ -33,6 +33,10 @@ $(document).ready(function() {
     });
 
 
+
+
+
+
     $(".close-popup").click(function() {
         console.log('close clicked......');
         $(".Subscription-popup").removeClass("open-popup").addClass('remove-popup');
@@ -132,6 +136,20 @@ $(document).ready(function() {
             $(".Subscription-popup").removeClass("open-popup").addClass('remove-popup');
         });
     });
+
+
+    $('.core-menu ul li,.core-menu li.single').click(function() {
+        console.log("clicked...................");
+        menuClose();
+    });
+
+    function menuClose() {
+        if ($(window).width() < 768) {
+            $(".burger-1, .burger-2, .burger-3").removeClass("open");
+            $(".core-menu").hide();
+            $('body').removeClass('fixed-body');
+        }
+    }
 });
 
 
@@ -145,3 +163,13 @@ $(document).ready(function() {
 
 //     }
 // });
+
+
+
+$(window).resize(function() {
+    if ($(window).width() > 768) {
+        $(".core-menu").show();
+    } else {
+        $(".core-menu").hide();
+    }
+});
