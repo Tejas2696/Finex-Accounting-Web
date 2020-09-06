@@ -8,7 +8,7 @@ export const SERVICES_CONTENT = {
     contentMainTitle: 'What <label>We Do</label>',
     contentDetails: {
       contentImage: 'assets/img/bk.jpeg',
-      contentTitle: 'Grow your Book-Keeping practice with <span>Fenix</span>',
+      contentTitle: 'Grow your Book-Keeping practice with <span>Finex</span>',
       contentDescription: `We are here to handle your day to day, Weekly, Monthly or Yearly book-keeping to Accounting firms and SME’s with very affordable hourly rate so that you can make your business more profitable. We also offer a full-time experienced book-keeper who can handle your all book-keeping remotely and who will work only for you and manage your all client’s book-keeping. Finex can help you in:`,
       contentDescList: [
         'Managing day to day book-keeping',
@@ -27,7 +27,7 @@ export const SERVICES_CONTENT = {
     contentMainTitle: 'What <label>We Do</label>',
     contentDetails: {
       contentImage: 'assets/img/VAT.JPG',
-      contentTitle: 'Grow your Value added Tax (VAT) practice with <span>Fenix</span>',
+      contentTitle: 'Grow your Value added Tax (VAT) practice with <span>Finex</span>',
       contentDescription: `We are here to handle all of the VAT returns for your or your clients and we assure the quality and correct calculation of VAT return as per HMRC standard rules. Finex can help you in:`,
       contentDescList: [
         'Quarterly book-keeping for VAT purpose',
@@ -46,7 +46,7 @@ export const SERVICES_CONTENT = {
     contentMainTitle: 'What <label>We Do</label>',
     contentDetails: {
       contentImage: 'assets/img/Management.JPG',
-      contentTitle: 'Grow your Management Accounts practice with <span>Fenix</span>',
+      contentTitle: 'Grow your Management Accounts practice with <span>Finex</span>',
       contentDescription: `Management reports are the lynchpins for decision making processes.  Reports need to be crisp, unambiguous, with a laser like focus on the business and customized as per specific operation and scale. At Finex the teams help clients and accountants in:`,
       contentDescList: [
         'Preparing Monthly and quarterly Profit and loss & Balance sheet',
@@ -65,7 +65,7 @@ export const SERVICES_CONTENT = {
     contentMainTitle: 'What <label>We Do</label>',
     contentDetails: {
       contentImage: 'assets/img/accounts-and-CT.jpg',
-      contentTitle: 'Grow your Year End accounts & CT returns Service with <span>Fenix</span>',
+      contentTitle: 'Grow your Year End accounts & CT returns Service with <span>Finex</span>',
       contentDescription: `Timely submission of year end accounts and CT returns is important to avoid punitive actions. Our professional team will unburden you from this exercise, replacing it with clock work like submissions that will not just be compliant, but which will add value to an organization with advisories, opinions and analytics on areas of improvement. Finex can help you in:`,
       contentDescList: [
         'We help you to prepare accounts with a much quicker turnaround time.',
@@ -88,7 +88,7 @@ export const SERVICES_CONTENT = {
     contentMainTitle: 'What <label>We Do</label>',
     contentDetails: {
       contentImage: 'assets/img/Tax.jpg',
-      contentTitle: 'Grow your Management Accounts practice with <span>Fenix</span>',
+      contentTitle: 'Grow your Management Accounts practice with <span>Finex</span>',
       contentDescription: `Finex offers to manage all your personal tax return with fix rate per tax return irrespective the income shown in tax return. Our expert team can help you in prepare & Submit the tax return by considering:`,
       contentDescList: [
         'Salary & Dividend income',
@@ -109,7 +109,7 @@ export const SERVICES_CONTENT = {
     contentMainTitle: 'What <label>We Do</label>',
     contentDetails: {
       contentImage: 'assets/img/company-secretarial.JPG',
-      contentTitle: 'Grow your Company Secretarial practice with <span>Fenix</span>',
+      contentTitle: 'Grow your Company Secretarial practice with <span>Finex</span>',
       contentDescription: `Finex will help you to meet all statutory requirements and Compliances. Our secretarial team will help you in:`,
       contentDescList: [
         'Registration with Companies house',
