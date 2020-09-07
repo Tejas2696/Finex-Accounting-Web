@@ -1,8 +1,5 @@
 $(document).ready(function() {
 
-
-
-
     $('#return-to-top').click(function() {
         $('body,html').animate({
             scrollTop: 0
@@ -13,8 +10,23 @@ $(document).ready(function() {
         $('body').toggleClass('fixed-body');
     });
 
+    // on click hide menu
     $('.core-menu ul li').click(function() {
         $(this).parent('ul').hide();
+    });
+
+    $("html").niceScroll({
+        cursorcolor: "lightgray",
+        cursorwidth: "5px",
+        cursorborder: "none",
+        cursorborderradius: "5px",
+        autohidemode: false,
+        zindex: 999,
+        scrollspeed: 51,
+        mousescrollstep: 45,
+        bouncescroll: true,
+        smoothscroll: true,
+        sensitiverail: true
     });
 
     //the trigger on hover when cursor directed to this class
@@ -28,23 +40,20 @@ $(document).ready(function() {
         function() {
             $('ul', this).slideUp('fast');
             $(this).removeClass('hover');
-        });
+        }
+    );
     //this feature only show on 600px device width
     $(".hamburger-menu").click(function() {
         $(".burger-1, .burger-2, .burger-3").toggleClass("open");
         $(".core-menu").slideToggle("fast");
     });
 
-
-
-
-
-
+    // Close Subscription-popup
     $(".close-popup").click(function() {
-        console.log('close clicked......');
         $(".Subscription-popup").removeClass("open-popup").addClass('remove-popup');
     });
 
+    // owl-carousel
     $('.owl-carousel').owlCarousel({
         autoplay: true,
         lazyLoad: true,
@@ -72,9 +81,12 @@ $(document).ready(function() {
                 items: 5
             }
         }
-    })
+    });
+
     var lastScrollTop = 0;
     $(window).scroll(function(event) {
+
+        // Owl slider
         if ($(".owl-carousel").length) {
             $('.owl-carousel').owlCarousel({
                 autoplay: true,
@@ -106,6 +118,7 @@ $(document).ready(function() {
             })
         }
 
+        // header hide and show on scroll
         var st = $(this).scrollTop();
         if (st > lastScrollTop) {
             var scroll = $(window).scrollTop();
@@ -122,15 +135,15 @@ $(document).ready(function() {
         }
         lastScrollTop = st;
 
+        // subscription pop up open
         if ($(".Subscription-popup").length) {
             var scroll = $(window).scrollTop();
-
-
             if (scroll >= 1200) {
                 $(".Subscription-popup").addClass("open-popup");
             }
         }
 
+        // return to top
         if ($(this).scrollTop() >= 100) {
             $('#return-to-top').fadeIn(200);
             $('#return-to-top').addClass("bottom");
@@ -139,21 +152,18 @@ $(document).ready(function() {
             $('#return-to-top').removeClass("bottom");
         }
 
+        // close pop up
         if ($(".close-popup").length) {
             $(".close-popup").click(function() {
-                console.log('close clicked......');
                 $(".Subscription-popup").removeClass("open-popup").addClass('remove-popup');
             });
         }
     });
 
-
+    // ON CLICK MENU CLOSE IN RESPONSIVE
     $('.core-menu ul li,.core-menu li.single').click(function() {
-        console.log("clicked...................");
         menuClose();
     });
-
-
 
     function menuClose() {
         if ($(window).width() < 768) {
@@ -165,19 +175,6 @@ $(document).ready(function() {
 });
 
 
-// $(window).scroll(function() {
-//     var scroll = $(window).scrollTop();
-//     if (scroll >= 500) {
-//         //clearHeader, not clearheader - caps H
-//         $("header").addClass("darkHeader");
-//     } else {
-//         $("header").removeClass("darkHeader");
-
-//     }
-// });
-
-
-
 $(window).resize(function() {
     if ($(window).width() > 768) {
         $(".core-menu").show();
@@ -186,105 +183,4 @@ $(window).resize(function() {
     }
 });
 
-$(document).ready(function() {
-    // $fn.scrollSpeed(step, speed, easing);
-    jQuery.scrollSpeed(200, 2000, 20);
-});
-
-// Custom scrolling speed with jQuery
-// Source: github.com/ByNathan/jQuery.scrollSpeed
-// Version: 1.0.2
-
-(function($) {
-
-    jQuery.scrollSpeed = function(step, speed, easing) {
-
-        var $document = $(document),
-            $window = $(window),
-            $body = $('html, body'),
-            option = easing || 'default',
-            root = 0,
-            scroll = false,
-            scrollY,
-            scrollX,
-            view;
-
-        if (window.navigator.msPointerEnabled)
-
-            return false;
-
-        $window.on('mousewheel DOMMouseScroll', function(e) {
-
-            var deltaY = e.originalEvent.wheelDeltaY,
-                detail = e.originalEvent.detail;
-            scrollY = $document.height() > $window.height();
-            scrollX = $document.width() > $window.width();
-            scroll = true;
-
-            if (scrollY) {
-
-                view = $window.height();
-
-                if (deltaY < 0 || detail > 0)
-
-                    root = (root + view) >= $document.height() ? root : root += step;
-
-                if (deltaY > 0 || detail < 0)
-
-                    root = root <= 0 ? 0 : root -= step;
-
-                $body.stop().animate({
-
-                    scrollTop: root
-
-                }, speed, option, function() {
-
-                    scroll = false;
-
-                });
-            }
-
-            if (scrollX) {
-
-                view = $window.width();
-
-                if (deltaY < 0 || detail > 0)
-
-                    root = (root + view) >= $document.width() ? root : root += step;
-
-                if (deltaY > 0 || detail < 0)
-
-                    root = root <= 0 ? 0 : root -= step;
-
-                $body.stop().animate({
-
-                    scrollLeft: root
-
-                }, speed, option, function() {
-
-                    scroll = false;
-
-                });
-            }
-
-            return false;
-
-        }).on('scroll', function() {
-
-            if (scrollY && !scroll) root = $window.scrollTop();
-            if (scrollX && !scroll) root = $window.scrollLeft();
-
-        }).on('resize', function() {
-
-            if (scrollY && !scroll) view = $window.height();
-            if (scrollX && !scroll) view = $window.width();
-
-        });
-    };
-
-    jQuery.easing.default = function(x, t, b, c, d) {
-
-        return -c * ((t = t / d - 1) * t * t * t - 1) + b;
-    };
-
-})(jQuery);
+// SMOOTH SCROLLING
