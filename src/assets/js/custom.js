@@ -181,7 +181,7 @@ $(window).resize(function() {
 
 $(document).ready(function() {
     // $fn.scrollSpeed(step, speed, easing);
-    jQuery.scrollSpeed(200, 800);
+    jQuery.scrollSpeed(200, 2000, 20);
 });
 
 // Custom scrolling speed with jQuery
