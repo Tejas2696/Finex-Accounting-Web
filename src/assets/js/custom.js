@@ -75,34 +75,37 @@ $(document).ready(function() {
     })
     var lastScrollTop = 0;
     $(window).scroll(function(event) {
-        $('.owl-carousel').owlCarousel({
-            autoplay: true,
-            lazyLoad: true,
-            loop: true,
-            margin: 20,
-            responsiveClass: true,
-            autoHeight: true,
-            autoplayTimeout: 3000,
-            smartSpeed: 800,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
+        if ($(".owl-carousel").length) {
+            $('.owl-carousel').owlCarousel({
+                autoplay: true,
+                lazyLoad: true,
+                loop: true,
+                margin: 20,
+                responsiveClass: true,
+                autoHeight: true,
+                autoplayTimeout: 3000,
+                smartSpeed: 800,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
 
-                600: {
-                    items: 3
-                },
+                    600: {
+                        items: 3
+                    },
 
-                1024: {
-                    items: 4
-                },
+                    1024: {
+                        items: 4
+                    },
 
-                1366: {
-                    items: 5
+                    1366: {
+                        items: 5
+                    }
                 }
-            }
-        })
+            })
+        }
+
         var st = $(this).scrollTop();
         if (st > lastScrollTop) {
             var scroll = $(window).scrollTop();
@@ -119,10 +122,13 @@ $(document).ready(function() {
         }
         lastScrollTop = st;
 
+        if ($(".Subscription-popup").length) {
+            var scroll = $(window).scrollTop();
 
-        var scroll = $(window).scrollTop();
-        if (scroll >= 1200) {
-            $(".Subscription-popup").addClass("open-popup");
+
+            if (scroll >= 1200) {
+                $(".Subscription-popup").addClass("open-popup");
+            }
         }
 
         if ($(this).scrollTop() >= 100) {
@@ -133,11 +139,12 @@ $(document).ready(function() {
             $('#return-to-top').removeClass("bottom");
         }
 
-
-        $(".close-popup").click(function() {
-            console.log('close clicked......');
-            $(".Subscription-popup").removeClass("open-popup").addClass('remove-popup');
-        });
+        if ($(".close-popup").length) {
+            $(".close-popup").click(function() {
+                console.log('close clicked......');
+                $(".Subscription-popup").removeClass("open-popup").addClass('remove-popup');
+            });
+        }
     });
 
 
