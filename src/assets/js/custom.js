@@ -15,19 +15,19 @@ $(document).ready(function() {
         $(this).parent('ul').hide();
     });
 
-    $("html").niceScroll({
-        cursorcolor: "lightgray",
-        cursorwidth: "5px",
-        cursorborder: "none",
-        cursorborderradius: "5px",
-        autohidemode: false,
-        zindex: 999,
-        scrollspeed: 51,
-        mousescrollstep: 45,
-        bouncescroll: true,
-        smoothscroll: true,
-        sensitiverail: true
-    });
+    // $("html").niceScroll({
+    //     cursorcolor: "lightgray",
+    //     cursorwidth: "5px",
+    //     cursorborder: "none",
+    //     cursorborderradius: "5px",
+    //     autohidemode: false,
+    //     zindex: 999,
+    //     scrollspeed: 51,
+    //     mousescrollstep: 45,
+    //     bouncescroll: true,
+    //     smoothscroll: true,
+    //     sensitiverail: true
+    // });
 
     //the trigger on hover when cursor directed to this class
     $(".core-menu li").hover(
