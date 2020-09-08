@@ -35,7 +35,6 @@
                         ],
                         "scripts": [
                             "src/assets/js/jquery.min.js",
-                            "src/assets/js/nice.js",
                             "src/assets/js/jquery.animatecss.min.js",
                             "node_modules/popper.js/dist/umd/popper.min.js",
                             "node_modules/bootstrap/dist/js/bootstrap.min.js",

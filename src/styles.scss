@@ -5,6 +5,10 @@ label {
     margin-bottom: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .pd-90 {
     padding: 90px 0;
     @media (max-width: $tablet) {
