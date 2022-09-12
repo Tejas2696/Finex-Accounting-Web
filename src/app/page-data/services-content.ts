@@ -88,7 +88,7 @@ export const SERVICES_CONTENT = {
     contentMainTitle: 'What <label>We Do</label>',
     contentDetails: {
       contentImage: 'assets/img/Tax.jpg',
-      contentTitle: 'Grow your Management Accounts practice with <span>Finex</span>',
+      contentTitle: 'Grow your Self-Assessment Tax Returns Services with <span>Finex</span>',
       contentDescription: `Finex offers to manage all your personal tax return with fix rate per tax return irrespective the income shown in tax return. Our expert team can help you in prepare & Submit the tax return by considering:`,
       contentDescList: [
         'Salary & Dividend income',
